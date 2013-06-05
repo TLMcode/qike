@@ -1,0 +1,54 @@
+<html> 
+<head> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<script src="http://www.7k7kjs.cn/js/lib/jquery/ui/1.8.17/jquery.effects.core-min.js"></script>
+<script src="http://www.7k7kjs.cn/js/lib/jquery/ui/1.8.17/jquery.effects.shake-min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script> -->
+<script> 
+function interval() { 
+$('#shake').effect('shake', { times:3,distance:10 }, 50);
+} 
+$(document).ready(function() { 
+var shake = setInterval(interval, 500); 
+}); 
+</script> 
+<style> 
+.body{ 
+background: #F9F9F9; 
+} 
+h1{ 
+text-align:center; 
+top:30px; 
+position: relative; 
+font-size: 36px; 
+line-height: 40px; 
+margin: 0; 
+position: relative; 
+font-weight: 300; 
+color: #C91622; 
+padding: 5px 0px; 
+text-shadow: 1px 1px 0px #F2F2F2, 1px 2px 0px #B1B1B2; 
+font-family: 'KenyanCoffeeRg-Regular'; 
+height:70px; 
+} 
+.container{ 
+display:table; 
+width:50%; 
+border-collapse: collapse; 
+margin: 0 auto; 
+} 
+.container img { 
+width:253px; 
+} 
+</style> 
+<title>jQuery Shake Effect</title> 
+</head> 
+<body> 
+<h1>jQuery Shake Effect</h1> 
+<br/><br/><br/> 
+<div class="container"> 
+<img src="http://jqueryui.com/jquery-wp-content/themes/jquery/images/logo-jquery-ui.png" id="shake"/> 
+</div> 
+</body> 
+</html> 
