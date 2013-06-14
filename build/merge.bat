@@ -4,4 +4,4 @@
 ::java -jar yuicompressor-2.4.6.jar --nomunge --preserve-semi  --disable-optimizations --charset utf-8 ../ueditor.all.js -o ../ueditor.all.min.js
 
 
-java -jar js.jar js_all.js  guide ../all.js
+java -jar js.jar js_all.js  guide ../qikeui.js
