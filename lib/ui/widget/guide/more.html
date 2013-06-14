@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="../../../jquery1.9.1.js"></script>
+    <!--开发-->
+    <script type="text/javascript" src="api.js"></script>
+    <style type="text/css">
+        .mguide{
+            position: absolute;
+            z-index: 9999;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+        .mguide span{
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .qikeui-step1 {
+            width: 451px;
+            height: 326px;
+            background-image: url(http://www.7k7kjs.cn/kkshow/guide/img/step1.png);
+            _background: none;
+            _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.7k7kjs.cn/kkshow/guide/img/step1.png" ,sizingMethod="noscale");
+            background-position: initial initial;
+            background-repeat: no-repeat no-repeat;
+        }
+        .qikeui-step2 {
+            width: 671px;
+            height: 462px;
+            background-image: url(http://www.7k7kjs.cn/kkshow/guide/img/step2.png);
+            _background: none;
+            _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.7k7kjs.cn/kkshow/guide/img/step2.png" ,sizingMethod="noscale");
+            background-position: initial initial;
+            background-repeat: no-repeat no-repeat;
+        }
+        .qikeui-step3 {
+            width: 610px;
+            height: 350px;
+            background-image: url(http://www.7k7kjs.cn/kkshow/guide/img/step3.png);
+            _background: none;
+            _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.7k7kjs.cn/kkshow/guide/img/step3.png" ,sizingMethod="noscale");
+            background-position: initial initial;
+            background-repeat: no-repeat no-repeat;
+        }
+        .qikeui-step4 {
+            width: 617px;
+            height: 385px;
+            background-image: url(http://www.7k7kjs.cn/kkshow/guide/img/step4.png);
+            _background: none;
+            _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.7k7kjs.cn/kkshow/guide/img/step4.png" ,sizingMethod="noscale");
+            background-position: initial initial;
+            background-repeat: no-repeat no-repeat;
+        }
+
+        .mguide .qikeui-step1-close {
+            width: 37px;
+            height: 37px;
+            left: 415px;
+            top: 23px;
+        }
+        .mguide .qikeui-step1-go{
+            width: 97px;
+            left: 177px;
+            top: 262px;
+            height: 37px;
+        }
+        .mguide .qikeui-step2-close {
+            width: 37px;
+            height: 37px;
+            left: 400px;
+            top: 168px;
+        }
+        .mguide .qikeui-step2-go{
+            width: 97px;
+            left: 170px;
+            top: 391px;
+            height: 37px;
+        }
+        .mguide .qikeui-step3-close {
+            width: 37px;
+            height: 37px;
+            left: 574px;
+            top: 21px;
+        }
+        .mguide .qikeui-step3-go{
+            width: 97px;
+            left: 343px;
+            top: 250px;
+            height: 37px;
+        }
+        .mguide .qikeui-step4-close {
+            width: 37px;
+            height: 37px;
+            left: 581px;
+            top: 21px;
+        }
+        .mguide .qikeui-step4-go{
+            width: 97px;
+            left: 352px;
+            top: 249px;
+            height: 37px;
+        }
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    var mg = new qike.ui.MGuide({
+        step:{
+            1:{
+                id:"guide1",
+                uiName:"step1",
+                pos:{
+                }
+            },
+            2:{
+                id:"guide2",
+                uiName:"step2",
+                pos:{
+
+                }
+            },
+            3:{
+                id:"guide3",
+                uiName:"step3",
+                pos:{
+
+                }
+            },
+            4:{
+                id:"guide4",
+                uiName:"step4",
+                pos:{
+
+                }
+            }
+        }
+    });
+    mg.start()
+</script>
+</body>
+</html>

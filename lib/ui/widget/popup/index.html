@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="../../../jquery1.9.1.js"></script>
+    <!--开发-->
+    <script type="text/javascript" src="api.js"></script>
+    <style type="text/css">
+        div{
+            border: 1px solid red;
+            background: #ccc;
+        }
+        #btn{
+            position: absolute;
+            left: 400px;
+            top: 200px;
+            width:20px;
+        }
+        select{
+            position: absolute;
+            left: 430px;
+            top: 220px;
+        }
+        #sss-content{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="sdf">
+<select>
+    <option>dsafadsf</option>
+</select>
+<script type="text/javascript">
+    var popup = new qike.ui.Popup({
+        id:"sss",
+        autoRender:true,
+        target:{
+            id:"btn",
+            showNodeEvt:"mouseover",
+            hideNodeEvt:"mouseout"
+        },
+        postype:"rb",
+        pos:{
+            x:30
+        }
+    });
+    popup.showAt()
+</script>
+</body>
+</html>
